@@ -2,7 +2,7 @@
 
 ## 🎯 Objetivo de la Demo
 
-En esta actividad exploraremos los **distintos tipos de funciones en JavaScript** y cómo se utilizan en situaciones reales.  
+En esta actividad exploraremos los **distintos tipos de funciones en JavaScript** y cómo se utilizan en situaciones reales.
 La idea no es memorizar sintaxis, sino **entender cuándo y por qué usar cada tipo de función**.
 
 Trabajaremos con:
@@ -25,7 +25,7 @@ Durante la demo se analizarán ejemplos prácticos para comprender:
 - Cómo se comporta la palabra clave `this` en funciones flecha.
 - Cuándo es conveniente usar la **sintaxis reducida** de una arrow function.
 
-⚠️ **Importante:**  
+⚠️ **Importante:**
 Durante esta actividad **no se entregará la solución completa**, solo pistas para que puedas llegar a ella por tu cuenta.
 
 ---
@@ -76,17 +76,44 @@ Las funciones flecha:
 - Prueba reducir aún más la sintaxis cuando la función tiene una sola instrucción.
 - Analiza cómo se comporta `this` dentro de una arrow function.
 
-🧠 **Dato clave:**  
+🧠 **Dato clave:**
 Las funciones flecha **no crean su propio contexto de `this`**, sino que lo heredan del contexto donde fueron definidas.
 
 ---
 
-## ✨ Buenas prácticas a observar
+## 🧪 Ejercicio: Simulador de Temperatura
 
-- Usar funciones para evitar repetir código.
-- Elegir el tipo de función según el contexto.
-- Mantener funciones pequeñas y con una sola responsabilidad.
-- Priorizar la legibilidad del código por sobre la complejidad.
+### 🙌 Contexto
+
+En una ciudad, un **sensor de temperatura** registra valores cada cierto tiempo y debe indicar si hace frío, templado o calor según el valor obtenido.
+
+---
+
+### ✍️ Consigna
+
+Crear una **función anónima** que genere un número aleatorio entre **0 y 40**, simulando una temperatura en grados Celsius.
+
+⏱️ **Tiempo estimado:** 25 minutos
+
+---
+
+### ⚙️ Paso a paso (sin solución)
+
+- Utiliza una función que permita generar números aleatorios.
+- Guarda el valor de la temperatura generada.
+- Crea otra función que **reciba la temperatura como parámetro**.
+- Dentro de esa función, evalúa el valor recibido y clasifica el clima según los rangos:
+  - "Hace frío" → entre 0 y 15 °C
+  - "Está templado" → entre 16 y 25 °C
+  - "Hace calor" → más de 25 °C
+
+- Muestra el resultado en la consola.
+
+💡 **Pistas:**
+
+- Piensa qué estructura condicional es la más adecuada.
+- Revisa cómo pasar valores desde una función a otra.
+- Pregúntate si alguna de las funciones podría transformarse en arrow function.
 
 ---
 
@@ -101,11 +128,8 @@ Las funciones flecha **no crean su propio contexto de `this`**, sino que lo here
 
 ## 🚀 Desafío final (opcional)
 
-Intenta:
+- Transforma una función tradicional en una función flecha.
+- Usa una función anónima dentro de otro método.
+- Identifica qué funciones podrían reutilizarse en otro contexto.
 
-- Transformar una función tradicional en una función flecha.
-- Usar una función anónima dentro de un método.
-- Detectar cuándo una función podría reutilizarse en otro contexto.
-
-No busques la solución perfecta.  
 👉 **Experimenta, equivócate y aprende del proceso.**
