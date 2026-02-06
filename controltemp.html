@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sensor de Temperatura</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="container mt-5">
+    <h1 class="text-center mb-4">🌡️ Sensor de Temperatura</h1>
+
+    <div id="resultado" class="alert alert-info text-center fs-2 mb-4">
+      Haz clic para medir temperatura
+    </div>
+
+    <button
+      id="medirBtn"
+      class="btn btn-primary btn-lg mx-auto d-block"
+      onclick="resultadoTemperatura()"
+    >
+      Medir Ahora
+    </button>
+    <h2 id="resultado-temp"></h2>
+    <!-- Incluye el script externo al final del body -->
+    <script src="controltemp.js"></script>
+  </body>
+</html>
